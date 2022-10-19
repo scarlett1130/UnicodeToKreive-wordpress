@@ -22,6 +22,18 @@
 
 		<?php wp_head(); ?>
 
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-DW81ESNEYQ');
+		</script>
+
+		<link rel="stylesheet" href="./assets/css/bootstrap.min.css" async defer>
+
+
 	</head>
 
 	<body <?php body_class(); ?>>
@@ -39,7 +51,7 @@
 					<?php
 
 					// Check whether the header search is activated in the customizer.
-					$enable_header_search = get_theme_mod( 'enable_header_search', true );
+					$enable_header_search = get_theme_mod( 'enable_header_search', false );
 
 					if ( true === $enable_header_search ) {
 
